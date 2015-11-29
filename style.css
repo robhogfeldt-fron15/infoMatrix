@@ -1,6 +1,4 @@
-.col-md-6{
-	background-color: red;
-}
+
 
 
 
@@ -8,13 +6,13 @@
 	width: 150px;
 	padding: 5px;
 	background-color: dimgrey;
+	float: right;
 }
 
 .choosenMatrix img{
 	width: 200px;
 }
 
-.movieAwards{
-	height: 10px;
-	background-color: lightseagreen;
+button{
+	margin-right: 10px;
 }
