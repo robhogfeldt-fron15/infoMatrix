@@ -5,24 +5,6 @@ var matrix2 = {"Title":"matrix2","Year":"2003","Rated":"R","Released":"15 May 20
 	
 var matrix3 = {"Title":"matrix3","Year":"2003","Rated":"R","Released":"05 Nov 2003","Runtime":"129 min","Genre":"Action, Sci-Fi","Director":"Andy Wachowski, Lana Wachowski","Writer":"Andy Wachowski, Lana Wachowski, Andy Wachowski (characters), Lana Wachowski (characters)","Actors":"Mary Alice, Tanveer K. Atwal, Helmut Bakaitis, Kate Beahan","Plot":"The human city of Zion defends itself against the massive invasion of the machines as Neo fights to end the war at another front while also opposing the rogue Agent Smith.","Language":"English, French","Country":"Australia, USA","Awards":"1 win & 19 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMTkyNjc4NTQzOV5BMl5BanBnXkFtZTcwNDYzMTQyMQ@@._V1_SX300.jpg","Metascore":"47","imdbRating":"6.7","imdbVotes":"346,296","imdbID":"tt0242653","Type":"movie","Response":"True","Oscars": ["NO AWARDS(piece of crap)"],"Trailer":"https://www.youtube.com/embed/hMbexEPAOQI"}	
 
-//Vanilla
-// onload = function(){
-// // 	var xhr = new XMLHttpRequest();
-// // xhr.open("GET", "http://www.omdbapi.com/?t=the+matrix+reloaded&y=&plot=short&r=json", false);
-// // xhr.send();
-
-
-// var elem = document.createElement("img");
-// elem.setAttribute("src", matrix2.Poster);
-// elem.setAttribute("alt", matrix2.Title);
-// document.getElementById("matrix2").appendChild(elem);
-
-// var elem2 = document.createElement("img");
-// elem2.setAttribute("src", matrix3.Poster);
-// elem2.setAttribute("alt", matrix3.Title);
-// document.getElementById("matrix3").appendChild(elem2);
-	
-// }
 
 var matrixArr = [matrix1,matrix2,matrix3]
 
@@ -52,11 +34,12 @@ $.each(matrixArr, function( i, l ){
 
 function animateChoosenMatrix(choosenOne){
 
+ 
  if ($(".stashed")[0]){
-    // Do something if class exists
     $( ".stashed" ).empty();
+ //Körs bara första gången   
 } else {
-    // Do something if class does not exist
+    
     $(".row").append("<div class='col-md-3 choosenMatrix'><img/></div>");
     $(".row").append("<div class='col-md-6 middle'></div>");
     $(".row").append("<div class='col-md-2 col-md-offset-1 stashed'></div>");
